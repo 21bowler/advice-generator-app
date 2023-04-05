@@ -30,6 +30,7 @@ main{
     background: var(--Dark-Grayish-Blue);
     padding: 20px 30px;
     border-radius: 10px;
+    width: 500px;
     position: relative;
 }
 
@@ -40,9 +41,14 @@ main h1{
 }
 
 .divider{
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
+.advice-text{
+    color: var(--Light-Cyan);
+    text-align: center;
+    padding-top: 10px;
+}
 
 .dice img{
     position: absolute;
@@ -51,5 +57,42 @@ main h1{
     padding: 12px;
     border-radius: 50%;
     cursor: pointer;
-    /* text-align: center; */
+    transition: 300ms ease;
+}
+
+.dice img:hover {
+    box-shadow: 0 0 20px #52ffa8;
+}
+
+.attribution{
+    position: absolute;
+    top: 550px;
+}
+
+@media screen and (max-width: 600px){
+    main{
+        width: 380px;
+    }
+    .divider-desktop {
+        width: 340px;
+    }
+    .dice img{
+        left: 175px;
+    }
+    .divider{
+        margin: 10px 0 10px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    main{
+        width: 350px;
+        padding: 10px 15px;
+    }
+    .divider-desktop{
+        width: 300px;
+    }
+    .dice img{
+        left: 150px;
+    }
 }
