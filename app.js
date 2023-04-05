@@ -23,3 +23,6 @@ function showquote(){
         alert('cant get the request!');
     })
 }
+
+//  Loaads the quote when its opened
+window.onload = showquote;
